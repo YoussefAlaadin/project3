@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+<body class="bg-dark">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+      <div class="container-fluid">
+        <img src="New folder/sigmaLogo.png" alt="" class="d-inline-block align-text-top rounded-circle " width="70px"
+          height="70px" />
+        <!--LOGO-->
+
+        <a class="navbar-brand border-end mx-3 px-2" href="#">Sigma</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Graphics Card</a></li>
+                <li><a class="dropdown-item" href="#">CPU</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Power Supply</a>
+                  <a class="dropdown-item" href="#">Cooler</a>
+                  <a class="dropdown-item" href="#">Monitors</a>
+                  <a class="dropdown-item" href="#">More...</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Social Icons -->
+  <section>
+    <ul class="list-links">
+      <li><a href="#"><i class="fab fa-facebook fs-1"></i></a>
+      </li>
+      <li><a href="#"><i class="fab fa-twitter fs-1"></i></a>
+      </li>
+      <li><a href="#"><i class="fab fa-linkedin fs-1"></i></a>
+      </li>
+      <li><a href="#"><i class="fab fa-instagram fs-1"></i></a>
+      </li>
+      <li><a href="#"><i class="fab fa-github fs-1"></i></a>
+      </li>
+      <li><a href="#"><i class="fab fa-twitch fs-1"></i></a>
+      </li>
+    </ul>
+  </section>
+  <!-------------------------------------Carousel------------------>
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide col-12" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.sigma-computer.com/image/catalog/slideshow/home2/1720345137.png" class="d-block w-100 h-100" 
+            alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h3>Powerfull Graphic</h3>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button type="button" class="m-3 bg-info text-light border-0 rounded">
+              <h5 class="mx-3 my-2 ">Visit Us</h5>
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.sigma-computer.com/image/catalog/slideshow/home2/1720345137.png" class="d-block w-100 h-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Powerfull Graphic</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <button type="button" class="m-3 bg-info text-light border-0 rounded">
+              <h5 class="mx-3 my-2 ">Visit Us</h5>
+            </button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.sigma-computer.com/image/catalog/slideshow/home2/1720345137.png" class="d-block w-100 h-100"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75">
+            <h5>Powerfull Graphic</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <button type="button" class="m-3 bg-info text-light border-0 rounded">
+              <h5 class="mx-3 my-2 ">Visit Us</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      <div class="bg-primary p-5">
+        <h1>Welcome</h1>
+        <p style="font-size: 21px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur vero facilis
+          tenetur officia, enim unde magni voluptatibus quidem, veritatis ducimus error illo hic saepe, explicabo
+          architecto excepturi eum quaerat! Architecto?</p>
+        <button type="button" class="btn btn-light btn-lg">learn more</button>
+      </div>
+    </section>
+    <!---------------------------ROWS-------------------------------->
+    <section>
+    <p class="h1 bg-black my-4" style="width:100%; height: 2px; margin-top: 30px;"></p>
+
+    <div class="row">
+      <div class="bg-primary p-5">
+        <h1 class="text-center">Lorem ipsum dolor sit amet.</h1>
+
+      </div>
+    </div>
+  </section>
+  <!-------------------------ACCORDION-------------------------------->
+  <section>
+    <div class="container-fluid">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-secondary text-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Refresh Rate
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance,
+              as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-secondary text-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Refresh Rate
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance,
+              as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item ">
+          <h2 class="accordion-header " id="headingThree">
+            <button class="accordion-button collapsed bg-secondary text-light" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Refresh Rate
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance,
+              as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="h1 bg-black" style="width:100%; height: 2px; margin-top: 30px;"></p>
+    </div>
+  </section>
+
+  <!---------------------------TRANSLATE------------------------------>
+  <section>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col bg-primary p-4" style="height: 100px;">
+          <h1 class="text-center">Translate from Arabic to English</h1>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col bg-secondary p-4" style="height: 360px;">
+          <h4 style="display: inline-block;">Write and translate</h4>
+          <a href="">
+            <h4 style="display: inline-block; color: blue;"> &nbsppress here</h4>
+          </a>
+          <div class="container-fluid mt-2">
+            <h2>Copy Text </h2>
+            <div class="mb-3">
+              <label for="myTextArea1" class="form-label">Enter some text:</label>
+              <textarea class="form-control" id="myTextArea1" rows="4"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="copyText('myTextArea1', 'copySuccess1')">Copy Text</button>
+            <p id="copySuccess1" class="mt-3 text-success" style="display:none;">Text copied successfully!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h1 bg-black" style="width:100%; height: 2px; margin-top: 30px;"></p>
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col bg-primary p-4" style="height: 100px;">
+          <h1 class="text-center">Translate from Arabic to English</h1>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col bg-secondary p-4" style="height: 360px;">
+          <h4 style="display: inline-block;">Write and translate</h4>
+          <a href="">
+            <h4 style="display: inline-block; color: blue;"> &nbsppress here</h4>
+          </a>
+          <div class="container-fluid mt-2">
+            <h2>Copy Text</h2>
+            <div class="mb-3">
+              <label for="myTextArea2" class="form-label">Enter some text:</label>
+              <textarea class="form-control" id="myTextArea2" rows="4"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="copyText('myTextArea2', 'copySuccess2')">Copy Text</button>
+            <p id="copySuccess2" class="mt-3 text-success fst" style="display:none;">Text copied successfully!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h1 bg-black" style="width:100%; height: 2px; margin-top: 30px;"></p>
+
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col bg-primary p-4" style="height: 100px;">
+          <h1 class="text-center">Translate from Arabic to English</h1>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col bg-secondary p-4" style="height: 360px;">
+          <h4 style="display: inline-block;">Write and translate</h4>
+          <a href="">
+            <h4 style="display: inline-block; color: blue;"> &nbsppress here</h4>
+          </a>
+          <div class="container-fluid mt-2">
+            <h2>Copy Text </h2>
+            <div class="mb-3">
+              <label for="myTextArea3" class="form-label">Enter some text:</label>
+              <textarea class="form-control" id="myTextArea3" rows="4"></textarea>
+            </div>
+            <button class="btn btn-primary" onclick="copyText('myTextArea3', 'copySuccess3')">Copy Text 3</button>
+            <p id="copySuccess3" class="mt-3 text-success" style="display:none;">Text copied successfully!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h1 bg-black" style="width:100%; height: 2px; margin-top: 30px;"></p>
+  </section>
+  <!-- ----------------------------FIXED BACKGROUND--------------------- -->
+  <section>
+    <div class="container-fluid mt-4 fixBack">
+    </div>
+    <!-- ----------------------DESTINASTION-------------------------------- -->
+    <div class="container-fluid desti">
+      <div class="row " style="height: 100px;">
+        <div class="col p-4 bg-primary">
+          <h1 class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------------------CARDS------------------------ -->
+  <section>
+    <div class="container mt-5 rtxCard">
+
+      <div class="row justify-content-center ">
+        <div class=" mx-3 col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block"
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+        <div class=" mx-3 col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center" style="">
+            <img class="card-img-top mx-auto d-block "
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+        <div class=" mx-3 col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center" style="">
+            <img class="card-img-top mx-auto d-block"
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 rtxCard">
+
+      <div class="row justify-content-center">
+        <div class=" mx-3 col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block"
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary z-3">Buy card</a>
+            </div>
+          </div>
+        </div>
+        <div class=" mx-3 col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block "
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+        <div class="mx-3 col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block"
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container mt-5 rtxCard">
+      <div class="row justify-content-evenly">
+        <div class=" col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block"
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+          <div class="card text-center">
+            <img class="card-img-top mx-auto d-block"
+              src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" style="width: 70%;"
+              alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">RTX 4090</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="btn btn-primary">Buy card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ----------------------------FIXED BACKGROUND--------------------- -->
+  <div class="container-fluid fixBack">
+  </div>
+  <p class="h1 bg-black" style="width:100%; height: 2px; margin: 30px 0;"></p>
+
+
+  <!--------------------------------------THANKS FOR--------------------- -->
+  <div class="container-fluid desti">
+    <div class="row " style="height: 100px;">
+      <div class="col p-4 bg-primary">
+        <h1 class="text-center">Lorem ipsum dolor </h1>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------THANKS CARD-------------------- -->
+  <section>
+    <div class="container mt-5 thanks" style="margin-bottom: 100px;">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg " alt="Person 1">
+            <div class="card-overlay">
+              <div class="cardHeader">
+                <h4 class="text-dark">All thanks and appreciation</h4>
+                <p class="text-dark">October 15, 2020</p>
+              </div>
+
+              <div class="cardFooter">
+                <img src="https://i.pinimg.com/564x/0e/0d/64/0e0d643d4f7e352b1eb853d568927ed8.jpg" alt="Person 1 Avatar"
+                  class="rounded-circle imgCircle mb-4">
+                <h5 class="text-light">24Gb VRam</h5>
+                <p class="text-light">Director of UI/UX</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" alt="Person 2">
+            <div class="card-overlay">
+              <div class="cardHeader">
+                <h4 class="text-dark">All thanks and appreciation</h4>
+                <p class="text-dark">October 15, 2020</p>
+              </div>
+
+              <div class="cardFooter">
+                <img src="https://i.pinimg.com/564x/0e/0d/64/0e0d643d4f7e352b1eb853d568927ed8.jpg" alt="Person 1 Avatar"
+                  class="rounded-circle imgCircle mb-4">
+                <h5 class="text-light">24Gb VRam</h5>
+                <p class="text-light">Director of UI/UX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-5 col-md-3 col-lg-3">
+          <div class="card">
+            <img src="https://i.pinimg.com/564x/6e/9d/85/6e9d857c224df9046ac5868d6b025347.jpg" alt="Person 3">
+            <div class="card-overlay">
+              <div class="cardHeader">
+                <h4 class="text-dark">All thanks and appreciation</h4>
+                <p class="text-dark">October 15, 2020</p>
+              </div>
+
+              <div class="cardFooter">
+                <img src="https://i.pinimg.com/564x/0e/0d/64/0e0d643d4f7e352b1eb853d568927ed8.jpg" alt="Person 1 Avatar"
+                  class="rounded-circle imgCircle mb-4">
+                <h5 class="text-light">24Gb VRam</h5>
+                <p class="text-light">Director of UI/UX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h1 bg-black" style="width:100%; height: 2px;"></p>
+  </section>
+  <!-- ---------------------------------------------------------------------------- -->
+  <section class="news">
+    <h1 class="mt-5 text-center text-light">Latest News</h1>
+    <div class="container mt-3">
+      <div class="card mb-5">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body mBot p-5">
+              <h2 class="card-title">Card title</h2>
+              <p class="card-title"><i class="fas fa-calendar-day"></i>Mon, May 20th 2020</p>
+              <p class="card-title card-line"></p>
+              <p class="card-text mt-4 fs-5">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Rerum harum nisi rem impedit natus minus non odio delectus maiores aspernatur
+                architecto voluptas explicabo reprehenderit at aliquid officia mollitia quia sit iste reiciendis maxime
+                ducimus aperiam, soluta eligendi. Provident quis quidem nesciunt illo vel repellat error magnam totam.
+                Minus, alias quia?</p>
+            </div>
+            <ul class="card-list list-unstyled ms-4">
+              <li class=" d-inline-block bg-primary ms-3 px-2 rounded-1"><i class="fas fa-tag"></i>summery</li>
+              <li class=" d-inline-block bg-primary ms-1 px-2 rounded-1"><i class="far fa-clock"></i>10 mins</li>
+              <li class=" d-inline-block bg-primary ms-1 px-2 rounded-1">
+                <i class="fas fa-play"></i>play video
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <img src="https://i.pinimg.com/564x/c4/b4/64/c4b4640f1506b0b80d8f89c1dce73456.jpg"
+              class="w-100 h-100 img rounded-start img-right rounded-2" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://i.pinimg.com/564x/c4/b4/64/c4b4640f1506b0b80d8f89c1dce73456.jpg"
+              class="img-fluid rounded-start img-left" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mBot p-5">
+              <h2 class="card-title">Card title</h2>
+              <p class="card-title"><i class="fas fa-calendar-day"></i>Mon, May 20th 2020</p>
+              <p class="card-title card-line"></p>
+              <p class="card-text mt-4 fs-5">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Rerum harum nisi rem impedit natus minus non odio delectus maiores aspernatur
+                architecto voluptas explicabo reprehenderit at aliquid officia mollitia quia sit iste reiciendis maxime
+                ducimus aperiam, soluta eligendi. Provident quis quidem nesciunt illo vel repellat error magnam totam.
+                Minus, alias quia?</p>
+            </div>
+            <div class="card-list list-unstyled ms-4">
+              <li class="d-inline-block bg-primary ms-3 px-2 rounded-1"><i class="fas fa-tag"></i>summery</li>
+              <li class="d-inline-block bg-primary ms-3 px-2 rounded-1"><i class="far fa-clock"></i>10 mins</li>
+              <li class="d-inline-block bg-primary ms-3 px-2 rounded-1 play" style="cursor: pointer;">
+                <i class="fas fa-play"></i>play video
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body mBot p-5">
+              <h2 class="card-title">Card title</h2>
+              <p class="card-title"><i class="fas fa-calendar-day"></i>Mon, May 20th 2020</p>
+              <p class="card-title card-line"></p>
+              <p class="card-text mt-4 fs-5">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Rerum harum nisi rem impedit natus minus non odio delectus maiores aspernatur
+                architecto voluptas explicabo reprehenderit at aliquid officia mollitia quia sit iste reiciendis maxime
+                ducimus aperiam, soluta eligendi. Provident quis quidem nesciunt illo vel repellat error magnam totam.
+                Minus, alias quia?</p>
+            </div>
+            <div class="card-list list-unstyled ms-4">
+              <li class="d-inline-block bg-primary ms-3 px-2 rounded-1"><i class="fas fa-tag"></i>summery</li>
+              <li class="d-inline-block bg-primary ms-1 px-2 rounded-1"><i class="far fa-clock"></i>10 mins</li>
+              <li class="d-inline-block bg-primary ms-1 px-2 rounded-1" play style="cursor: pointer;">
+                <i class="fas fa-play "></i>play video
+              </li>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="https://i.pinimg.com/564x/c4/b4/64/c4b4640f1506b0b80d8f89c1dce73456.jpg"
+              class="img-fluid rounded-start img-right" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="card mb-5">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://i.pinimg.com/564x/c4/b4/64/c4b4640f1506b0b80d8f89c1dce73456.jpg"
+              class="img-fluid rounded-start img-left" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mBot p-5">
+              <h2 class="card-title">Card title</h2>
+              <p class="card-title"><i class="fas fa-calendar-day"></i>Mon, May 20th 2020</p>
+              <p class="card-title card-line"></p>
+              <p class="card-text mt-4 fs-5">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Rerum harum nisi rem impedit natus minus non odio delectus maiores aspernatur
+                architecto voluptas explicabo reprehenderit at aliquid officia mollitia quia sit iste reiciendis maxime
+                ducimus aperiam, soluta eligendi. Provident quis quidem nesciunt illo vel repellat error magnam totam.
+                Minus, alias quia?</p>
+            </div>
+            <div class="card-list list-unstyled ms-4">
+              <li class="d-inline-block bg-primary ms-3 px-2 rounded-1"><i class="fas fa-tag"></i>summery</li>
+              <li class="d-inline-block bg-primary ms-1 px-2 rounded-1"><i class="far fa-clock"></i>10 mins</li>
+              <li class="d-inline-block bg-primary ms-1 px-2 rounded-1 play" style="cursor: pointer;">
+                <i class="fas fa-play"></i>play video
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h1 class="my-5 text-center text-light">join us</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2 join bg-light text-center mx-4 my-4">
+          <h4 class="my-3 text-capitalize">follow us</h4>
+          <img class="join-img" src="New folder/WhatsApp Image 2024-08-28 at 07.56.44_47544555.jpg" alt="">
+          <h4 class="my-3 text-capitalize">press the link</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2 join bg-light text-center mx-4 my-4">
+          <h4 class="my-3 text-capitalize">follow us</h4>
+          <img class="join-img" src="New folder/insta.jpg" alt="">
+          <h4 class="my-3 text-capitalize">press the link</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2 join bg-light text-center mx-4 my-4">
+          <h4 class="my-3 text-capitalize">follow us</h4>
+          <img class="join-img" src="New folder/LinkedIn.jpg" alt="">
+          <h4 class="my-3 text-capitalize">press the link</h4>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-2 join bg-light text-center mx-4 my-4">
+          <h4 class="my-3 text-capitalize">follow us</h4>
+          <img class="join-img" src="New folder/Twitter.jpg" alt="">
+          <h4 class="my-3 text-capitalize">press the link</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary">
+          <div class="logo-foot my-3 text-center border-top border-bottom"><img class="rounded-circle my-2"
+              src="New folder/sigmaLogo.png" alt="" width="80" height="80">
+            <h4 class="d-inline fs-4 ms-3">good company</h4>
+          </div>
+          <div class="col info-foot text-center bg-primary">
+            <h5>Phone : 000-000-000
+
+            </h5>
+            <h5 class="">Address: Egypt
+
+            </h5>
+            <h5>Fax : 000-000-000
+
+            </h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary">
+          <div class="logo-foot my-3 text-center border-top border-bottom"><img class="rounded-circle my-2 "
+              src="New folder/sigmaLogo.png" alt="" width="80" height="80">
+            <h4 class="d-inline fs-4 ms-3">good company</h4>
+          </div>
+          <div class="col info-foot text-center bg-primary">
+            <h5><a href="" class="text-dark text-decoration-none">Visit Us</a>
+
+            </h5>
+            <h5><a href="" class="text-dark text-decoration-none">Take a look</a>
+
+            </h5>
+            <h5><a href="" class="text-dark text-decoration-none">Your health is more important</a>
+
+            </h5>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary">
+          <div class="logo-foot my-3 text-center border-top border-bottom"><img class="rounded-circle my-2"
+              src="New folder/sigmaLogo.png" alt="" width="80" height="80">
+            <h4 class="d-inline fs-4 ms-3">good company</h4>
+          </div>
+          <div class="info-foot text-center bg-primary text-capitalize">
+            <h5>service for all
+
+            </h5>
+            <h5>provide best services
+
+            </h5>
+            <h5>you will be better than before
+
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col text-uppercase copyRight text-center bg-primary border-top border-bottom">
+        <h2 class=" my-lg-3">copyRight ©2024 youssef alaa, good company, all rights</h2>
+      </div>
+      <div class="col-12 bg-primary p-5"></div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function copyText(textAreaId, successMessageId) {
+      var textArea = document.getElementById(textAreaId);
+      var successMessage = document.getElementById(successMessageId);
+
+      navigator.clipboard.writeText(textArea.value).then(function () {
+        successMessage.style.display = "block";
+        setTimeout(function () {
+          successMessage.style.display = "none";
+        }, 2000);
+      }).catch(function (error) {
+        console.error("Copy failed", error);
+      });
+    }
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

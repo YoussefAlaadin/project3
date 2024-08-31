@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 9000px;
+    padding-top: 60px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.list-links{
+    position: fixed;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 40%;
+    right: 50px;
+    transform: translateY(-40%);
+    z-index: 1030;
+}
+.list-links li{
+    width: 40px;
+    height: 40px;   
+    text-align: center;
+    margin: 15px 2px;
+
+}
+
+.list-links li i {
+    font-size: 50px;
+    line-height: 40px;
+    color: rgb(51, 223, 65);
+    }
+
+.fixBack{
+    margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+        background-image: url(https://www.sigma-computer.com/image/catalog/slideshow/home2/1722766362.jpg);
+        height: 400px;
+    }
+
+
+    .rtxCard .card::after{
+        position: absolute  ;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        background-color: rgb(79, 167, 113);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .rtxCard .card:hover::after{
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transition: 0.5s;
+        z-index: 0;
+    }
+    .rtxCard .card::before{
+        position: absolute  ;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        background-color: rgb(79, 167, 113);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .rtxCard .card:hover::before{
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        transition: 0.5s;
+        z-index: 0;
+    }
+
+    .thanks .card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        transition: transform 0.3s ease; /* Smooth transition */
+
+    }
+    .thanks .card:hover{
+        transform: scale(0.85);
+    }
+
+    .thanks .card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        filter: brightness(100%); /* Adjusts the brightness of the image */
+        
+    }
+
+        .thanks .card-overlay img{
+            width: 30%;
+        }
+    .thanks .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-image: linear-gradient(to bottom , rgba(40, 193, 204, 0.9), rgba(3, 2, 8, 0.705) );
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 20px;
+        z-index: 0;
+    }
+    .thanks .card-overlay:hover{
+        transition: 0.3s;
+    }
+    
+    .cardHeader{
+        margin-bottom: 180px;
+    }
+     .imgCircle{
+        margin-right: 200px;
+        border:solid 5px grey;
+    }
+
+    .card-overlay h4, .card-overlay p {
+        margin: 0;
+        padding: 5px;
+    }
+
+    
+    .card-line::after
+    {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 5px;
+        background-color: aqua;
+        transition: all 0.5s;
+        margin-bottom: 10px;
+    }
+    .mBot:hover .card-line::after{
+        width: 160px;
+    }
+    
+    
+    .join-img
+    {
+        width: 35%;
+    }
+
+    .footer-line{
+        width: 80%;
+        height: 2px;
+        background-color: rgba(148, 180, 180, 0.808);
+    }
+
+    .card-list li:last-child:hover{
+        background-color: blueviolet !important;
+        cursor: pointer;
+    }
+    .news img{
+        transition: 0.3s;
+        transform: scale(1.01);
+    }
+    .news img:hover{
+        transform: scale(1.04);
+    }
+
+    @media (min-width: 770px ){
+        .img-left{
+            clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+        }
+        .img-right{
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
+        }
+    }
+
+    footer .join{
+        transition: 0.3s;
+        border-radius: 15px;
+    }
+    footer .join:hover{
+        transform: scale(1.03);
+    }
+    footer .join-img{
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px
+    }
+
+    /***********************************************/
+    
